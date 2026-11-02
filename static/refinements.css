@@ -1,0 +1,12 @@
+.image-stage>img{max-height:none;height:auto;object-fit:initial}
+.image-stage:not(.zoom-canvas) .face-box span{display:none}
+.image-stage:not(.zoom-canvas) .face-box:hover span,.image-stage:not(.zoom-canvas) .face-box:focus span{display:block}
+.zoom-viewport{overflow:auto;max-height:60vh;border-radius:8px}
+.zoom-canvas{width:1600px}
+.zoom-canvas .face-box span{font-size:11px}
+.photo-info>span:last-child{display:flex;align-items:center;gap:8px}
+.photo-info>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.face-box:focus{outline:3px solid #fff9;z-index:2}
+.busy-panel progress{display:block}
+.roster-filter button{white-space:nowrap}
+.gallery-card:focus-within{border-color:var(--teal)}

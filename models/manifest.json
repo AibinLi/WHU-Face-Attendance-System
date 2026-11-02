@@ -1,0 +1,22 @@
+{
+  "adaface_ir101.onnx": {
+    "sha256": "333a49f1f2cbea91c68ad8ee9af16dcfaa59a931fe6d0cd4c80a131bbe79e2cc",
+    "bytes": 260693964
+  },
+  "arcface_r100.onnx": {
+    "sha256": "4ab1d6435d639628a6f3e5008dd4f929edf4c4124b1a7169e1048f9fef534cdf",
+    "bytes": 260665334
+  },
+  "scrfd_10g.onnx": {
+    "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+    "bytes": 16923827
+  },
+  "adaface_ir101.safetensors": {
+    "sha256": "2ea535a43877bd3de8091903935c783ce335be66a9f8917fae9a7a18ae4bbf56",
+    "bytes": 260980552
+  },
+  "adaface_architecture.py": {
+    "sha256": "e31be55c60b538c15151887e911b7535e2f0e1114a13427ba06483e1cd2a63f9",
+    "bytes": 10912
+  }
+}

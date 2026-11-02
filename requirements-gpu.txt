@@ -1,0 +1,11 @@
+Flask==3.0.3
+numpy==1.26.4
+scipy==1.13.1
+opencv-python-headless==4.11.0.86
+Pillow==11.1.0
+scikit-image==0.24.0
+onnxruntime-gpu==1.19.2
+nvidia-cublas-cu12==12.4.5.8
+nvidia-cudnn-cu12==9.1.1.17
+nvidia-cuda-runtime-cu12==12.4.127
+nvidia-cufft-cu12==11.2.1.3

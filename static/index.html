@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>见齐 · 班级合照考勤</title><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/refinements.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23197668'/%3E%3Cpath d='M16 6 26 16 16 26 6 16Z' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E"></head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/"><span class="brand-icon">◈</span><span>见齐<span class="brand-en">CLASSROOM VISION</span></span></a>
+  <div class="nav-label">工作空间</div>
+  <button class="nav active" data-page="attendance"><span>▣</span>课堂考勤<span class="nav-arrow">↗</span></button>
+  <button class="nav" data-page="gallery"><span>▦</span>班级底库</button>
+  <div class="sidebar-bottom"><div class="sidebar-note">一张合照，<br>看见每一个到场的人。</div></div>
+</aside>
+<main>
+<header><span>多媒体技术实验 <span class="slash">/</span> <b id="breadcrumb">课堂考勤</b></span><span class="header-right">LOCAL WORKSPACE <i></i> <span id="date"></span></span></header>
+<div id="content"></div>
+</main>
+<div id="toast" role="status"></div>
+<div id="busy" class="overlay hidden"><div class="busy-panel"><div class="spinner"></div><h2 id="busy-title">正在分析照片</h2><p id="busy-text">首次加载模型可能需要一些时间</p><progress id="busy-progress" max="1" value="0"></progress><small>请保持页面开启，处理结果会自动保存</small></div></div>
+<dialog id="modal"><div id="modal-content"></div></dialog>
+<input id="file-input" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden>
+<script src="/static/app.js"></script>
+</body></html>
