@@ -23,11 +23,11 @@
 
 ```powershell
 python -m venv .venv
-.\\.venv\\Scripts\\python.exe -m pip install --upgrade pip
-.\\.venv\\Scripts\\python.exe -m pip install -r requirements.txt
-.\\.venv\\Scripts\\python.exe -m pip install -r requirements-dev.txt
-python tools/download_models.py
-.\\.venv\\Scripts\\python.exe launch.py
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+.\.venv\Scripts\python.exe tools/download_models.py
+.\.venv\Scripts\python.exe launch.py
 ```
 
 然后打开 <http://127.0.0.1:8765>。Windows 用户也可以双击 `启动考勤系统.bat`。
@@ -37,7 +37,7 @@ python tools/download_models.py
 安装匹配的 NVIDIA 驱动后执行：
 
 ```powershell
-.\\.venv\\Scripts\\python.exe -m pip install -r requirements-gpu.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements-gpu.txt
 ```
 
 项目会自动优先使用 CUDA；强制 CPU 可设置 `ATTENDANCE_CPU=1`。下载脚本会校验 SHA256，也支持 `--endpoint` 指定镜像。
@@ -82,8 +82,8 @@ python tools/download_models.py
 ## 测试
 
 ```powershell
-.\\.venv\\Scripts\\python.exe -m pip install -r requirements-dev.txt
-.\\.venv\\Scripts\\python.exe -m pytest -q
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
 测试验证业务流程和匹配逻辑；真正处理图片前仍需下载模型并人工核对底库。请不要把 `data/` 中的照片、特征或数据库提交到 GitHub。
